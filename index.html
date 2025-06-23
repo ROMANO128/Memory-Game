@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Memory Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h2 class="heading">Memory Game</h2>
+
+        <div id="settings" class="settings">
+            <label for="field-size">Розмір ігрового поля:</label>
+            <select id="field-size">
+                <option value="4" selected>4x4</option>
+                <option value="6">6x6</option>
+            </select>
+
+            <label for="difficulty">Складність:</label>
+            <select id="difficulty">
+                <option value="easy">Легко</option>
+                <option value="normal">Середньо</option>
+                <option value="hard">Важко</option>
+            </select>
+
+            <label for="player-mode">Режим гри:</label>
+            <select id="player-mode">
+                <option value="1player" selected>1 гравець</option>
+                <option value="2players">2 гравці</option>
+            </select>
+            <label for="rounds">Кількість раундів:</label>
+            <select id="rounds">
+                <option value="1" selected>1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+            </select>
+
+
+            <button type="button" id="start-game-button">Почати гру</button>
+            <button type="button" id="new-game-button">Нова гра</button>
+        </div>
+
+        <div class="score-display" id="score-display"></div>
+
+        <div class="game-board" id="game-board"></div>
+        
+        <h2 class="victory-message" id="victory-message"></h2>
+        
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
